@@ -6,7 +6,9 @@ Go memiliki pointer,  A pointer holds the memory address of a value.
 ```
 
 # struct
-`struct` adalah kumpulan field yang memiliki berbagai macam tipe data
+* `struct` adalah kumpulan field yang memiliki berbagai macam tipe data
+* karna di dalam go tidak ada class, maka `struct` bisa di pakai sebagia attribut
+
 
 cara mendefinisikan 
 ```

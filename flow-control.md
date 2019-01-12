@@ -42,3 +42,31 @@ func main() {
 	fmt.Println(sqrt(2), sqrt(-4))
 }
 ```
+### Menyingkat `if` statement
+Untuk menyingkat if statment, variabel bisa di deklarasikan di dalam if statement
+```
+if variabel := value; expression {
+	return variabel
+}
+```  
+
+## Switch
+* `switch` statmen adalah cara singkat untuk menulis sebuah sequence dari `if- else` statements.
+`switch` akan menampilkan hanya satu expression yang bernilai true
+* switch memerikas case dari atas ke bawah, dan akan berhenti ketika case bernilai benar
+* switch tanpa kondisi, itu berarti `switch true`
+```
+switch variabel := value; variabel {
+case value:
+	statement
+case value:
+	statement
+default:
+	statement
+}
+```
+
+## Defer (penudaan)
+* ``defer`` statement yang menunda eksekusi, statement `defer` akan di eksekusi setelah semua statemen di dalam fungsi
+selesai di eksekusi
+* defer bisa di masukan ke dalam stack

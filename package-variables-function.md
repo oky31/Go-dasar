@@ -21,10 +21,18 @@ import "math"
 * variabel di deklarasiakan dengan keyword `var`, variabel bisa di deklarasikan pada level `function` atau `package`
 * tipe data bisa di abaikan, dengan catatan variabel harus sudah di inisialisasi
 * di dalam fungsi bisa mengunakan `:=` sebagai ganti keyword `var`, hal ini tidak berlaku di luar fungsi
+* variable yang di deklarasikan tanpa di beri nilai akan otomanis berisi 0
 
 Contoh :  
 ```
 
+```
+## Deklarasi tanpa di inisialisasi
+deklarasi variabel tanpa di inisialisasi memili default value berdasarkan masing masing tipe
+```
+0 -> untuk tipe numeric
+false -> untuk tipe logika
+"" -> untuk tipe string
 ```
 
 # Tipe Data
@@ -71,5 +79,6 @@ Ketika tipe data tidak di deklarasikan di variabel, variabel akan otomatis menye
 
 # Compile progarm
 ```
-go bulid
+go bulid    #compile program
+go run      #menjalankan tanpa di compile
 ```

@@ -4,7 +4,7 @@
 * Mendefinikan tipe data yang di kembaliakan oleh fungsi, di letakan setelah parameter ex: `func add(x int) int {}` 
 * Jika parameter difungsi memiliki tipe yang sama abaikan deklarasi tipe untuk yang lain `x int, y int` menjadi `x, y int`
 * Fungsi bisa mereturnkan lebih dari 1 variabel
-* "naked" return, dimana sebuah fungsi tidak mendefinikan return value-nya, di gunakan hanya untuk fungsi yang pendek
+* "naked" return atau "named return parameters", dimana sebuah fungsi tidak mendefinikan return value-nya dialam fungsi, tetapi di returnkan di tipe data fungsi , di gunakan hanya untuk fungsi yang pendek
 
 
 ## Mendefinisikan fungsi
@@ -47,5 +47,26 @@ func main(){
     foo = 10
     bar = 20
     fmt.Println(banyak_nilai(foo, bar))
+}
+```
+
+## "naked" pengembalian nilai
+```
+pckage main
+
+import "fmt"
+
+function banyak_nilai(x, y int) (x, y int) {
+    x = x * 2
+    y = y * 2
+    return
+}
+
+func main() {
+    foo, bar int
+    
+    foo = 10
+    bar = 20
+    fmt.Println(banyak_nilai(foo,bar))
 }
 ```

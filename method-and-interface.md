@@ -1,7 +1,13 @@
 # method
 * Go tidak memiliki class. Namun, anda bisa mendefinisikan method pada tipe.
-* Sebuah method adalah sebuah fungsi dengan argumen khusus receiver.
+* Tipe data bisa memiliki method
+* Method memiliki `receiver` yang mengarah ke tipe data
+```
+func (r reveiverName) methodName() tipeData
+```
+* Sebuah method adalah sebuah fungsi dengan argumen khusus yang disebut `receiver`.
 * Method bisa di deklarasikan di `type`  lain selain `struct`
+* Ingat: `method` adalah sebuah fungsi yang hanya di tambahkan `receviver` argument
 
 ada 2 jenis method di go :
 * value receiver -> hanya bisa menghitung nilai

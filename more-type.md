@@ -40,13 +40,14 @@ array `[n]T` dimana `n` panjang array, dan `T` tipe data
 
 * array memiliki ukuran yang tetap
 
-# Slice
+# Slice (array dinamis)
 * memiliki ukuran yang dinamis
 * `[]T` , sebuah slice bertipe data T
 * `a[bawah:atas]`, untuk memotong slice
 * slice tidak menyimpan data, hanya mengacu bagian dari array
 * mengubah elemen pada slice, berarti mengubah elemen pada array
 * untuk menabahkan elemen ke dalam sline `func append(s []T, vs ...T) []T`
+* `a[low:hight]` ambil elemen mulai dari index low sampai index hight tetapi tidak termasuk height
 
 # Range
 * `range` untuk perulangan di dalam slice,  `range` mengembalikan 2 nilai yaitu index dan value

@@ -11,14 +11,23 @@ Go hanya memiliki satu looping construct, yaitu `for`
 
 `init state` dan `post statement` adalah optional di dalam badan for
 
+ex :
+```
+sum :=0;
+for i:=0; i<100; i++ {
+	sum += sum
+}
+
+```
+
 ## While
 Karna go hanya memiliki `for` loop, untuk `while` gunakan `for` tanpa `init state` dan `post statement` 
 ```
 sum := 1
-	for sum < 1000 {
-		sum += sum
-	}
-	fmt.Println(sum)
+for sum < 1000 {
+	sum += sum
+}
+fmt.Println(sum)
 ```
 
 ## IF
